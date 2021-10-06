@@ -20,6 +20,10 @@ namespace oop_lesson_4a_parking.models
         {
             return "I am the CarPark";
         }
+        public void AddCustomer(Customer newCustomer)
+        {
+            listofCustomers.Add(newCustomer);
+        }
         public void CalculateCharges()
         {
             foreach(Customer customer in listofCustomers)
